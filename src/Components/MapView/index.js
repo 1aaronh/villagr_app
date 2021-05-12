@@ -4,6 +4,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown'
 
+import StateDropdown from '../StateDropdown';
 
 const MapView = () => {
 
