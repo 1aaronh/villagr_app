@@ -1,8 +1,6 @@
 import Map from '../Map';
 import React from 'react';
 import Checkbox from '@material-ui/core/Checkbox';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown'
 
 import StateDropdown from '../StateDropdown';
 
@@ -99,6 +97,7 @@ const MapView = () => {
         <p>In your Community or Anywhere</p>
         <p>Search by State | Filter by Need</p>
         <p>View the Scale of Your Impact Below</p>
+        <StateDropdown />
         <div style={{display: 'flex', flexWrap: 'wrap', maxWidth: '100vw', marginBottom: 20, justifyContent: 'center'}}>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
             <Checkbox 
