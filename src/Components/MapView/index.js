@@ -1,9 +1,69 @@
 import Map from '../Map';
-import React, { Dropdown } from 'react';
+import React from 'react';
 import Checkbox from '@material-ui/core/Checkbox';
 
+import StateDropdown from '../StateDropdown';
 
 const MapView = () => {
+
+  const states = ['AK',
+  'AL',
+  'AR',
+  'AS',
+  'AZ',
+  'CA',
+  'CO',
+  'CT',
+  'DC',
+  'DE',
+  'FL',
+  'GA',
+  'GU',
+  'HI',
+  'IA',
+  'ID',
+  'IL',
+  'IN',
+  'KS',
+  'KY',
+  'LA',
+  'MA',
+  'MD',
+  'ME',
+  'MI',
+  'MN',
+  'MO',
+  'MP',
+  'MS',
+  'MT',
+  'NC',
+  'ND',
+  'NE',
+  'NH',
+  'NJ',
+  'NM',
+  'NV',
+  'NY',
+  'OH',
+  'OK',
+  'OR',
+  'PA',
+  'PR',
+  'RI',
+  'SC',
+  'SD',
+  'TN',
+  'TX',
+  'UT',
+  'VA',
+  'VI',
+  'VT',
+  'WA',
+  'WI',
+  'WV',
+  'WY'];
+  
+  const [selectedState, setSelectedState] = React.useState("");
 
   const [minorChecked, setMinorChecked] = React.useState(true);
   const [moderateChecked, setModerateChecked] = React.useState(true);
@@ -37,6 +97,7 @@ const MapView = () => {
         <p>In your Community or Anywhere</p>
         <p>Search by State | Filter by Need</p>
         <p>View the Scale of Your Impact Below</p>
+        <StateDropdown />
         <div style={{display: 'flex', flexWrap: 'wrap', maxWidth: '100vw', marginBottom: 20, justifyContent: 'center'}}>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
             <Checkbox 
@@ -78,7 +139,7 @@ const MapView = () => {
             <p>Critical Impact</p>
             <img style={{width: 40, height: 50}} src="https://res.cloudinary.com/bitingrent/image/upload/v1616616185/service-one/Critical_Need_csmdmo.png" alt=""/>
           </div>
-
+        </div>
 {/* Dropdown menu Test: */}
 
           {/* <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
@@ -100,8 +161,8 @@ const MapView = () => {
               </Dropdown.Menu>
             </Dropdown>
           </div> */}
-        </div>
       </div>
-);};
+  );
+};
 
 export default MapView;
