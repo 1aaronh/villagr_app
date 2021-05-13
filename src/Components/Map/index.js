@@ -99,7 +99,7 @@ function MapComponent(props) {
         scaledSize: { width: 20, height: 25 }
     }
 
-    console.log(locations[0]);
+    // console.log(locations[0]);
 
 // Separate public URL API routes for 
 
