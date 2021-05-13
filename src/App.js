@@ -1,21 +1,22 @@
 import './App.css';
-import React, { Dropdown } from 'react';
-import { Route, Link, Switch, NavLink } from 'react-router-dom';
+import React from 'react';
+import { Route, Link, Switch } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 // import Home from './Components/Home';
 import MapView from './Components/MapView';
 import ListView from './Components/ListView';
-import { Nav, NavItem } from 'react-bootstrap';
+// import { Nav, NavItem } from 'react-bootstrap';
 
 function App() {
   return (
-    <body style={{backgroundColor: '#ebeeff'}}>
+    // <body style={{backgroundColor: '#ebeeff'}}>
       <div className="App" style={{backgroundColor: '#ebeeff'}}>
         <br></br>
         <br></br>
         
-        <Navbar expand="lg"  justify variant="tabs">
+        <Navbar expand="lg" variant="tabs">
           <Navbar.Brand style={{backgroundColor: '#4f64dd'}}>
           <img src={process.env.PUBLIC_URL + '/logo.png'} alt="logo" height="180px"/>
           <br></br>
@@ -60,7 +61,7 @@ function App() {
           {window.location.href="./about_page.html"}} />
         </Switch>
       </div>
-    </body>
+    // </body>
   );
 }
 
