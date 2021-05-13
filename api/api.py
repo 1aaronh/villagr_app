@@ -106,18 +106,27 @@ def get_all_limit():
     return jsonify(result)
 
 # Pagination Test:
-@app.route('/api/page/<int:page>',methods=['GET'])
+@app.route('/api/paging/<int:page>',methods=['GET'])
 def get_all_paged(page):
-    page=1
+    page = request.args.get('page', 1, type=int)
     per_page=10
     # page1 = Villagr.query.order_by(Villagr.id_).paginate(page=page,per_page=per_page,error_out=True)
     page1 = Villagr.query.paginate(page=page,per_page=per_page,error_out=True)
     result = villagrs_schema.dump(page1.items)
     return jsonify(result)
 
+# Page Filter Test:
+@app.route('/api/listview',methods=['GET'])
+def get_listview():
+    page = request.args.get('page', 1, type=int)
+    per_page = request.args.get('limit', 10, type=int)
+    page1 = Villagr.query.paginate(page=page,per_page=per_page,error_out=True)
+    result = villagrs_schema.dump(page1.items)
+    return jsonify(result)
+
 # Angle bracket route parameters must match DB schema column names:
 # get single business by primary key with get method.
-@app.route('/api/<id>',methods=['GET'])
+@app.route('/api/<id_>',methods=['GET'])
 def get_business(id_):
     # business = Villagr.query.get(id_)
     business = Villagr.query.get_or_404(id_)
