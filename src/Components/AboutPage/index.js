@@ -3,8 +3,9 @@ import React from 'react';
 const AboutPage = ({ business_name }) => {
   return (
 
-    <body id="page-top" style="background-color:#ebeeff;font-family:karla;width:55%;margin: 0 auto;">
-      <br>
+    // <body id="page-top" style="background-color:#ebeeff;font-family:karla;width:55%;margin: 0 auto;">
+    <div>
+      <br><br/>
       <h2 style="font-family:karla;width:50%;color:#7086FF;text-align:center;margin: 0 auto;">Villagr's Mission</h2><br><a href="https://www.villagr-us.com/#/">Back to Homepage</a>
       <div>
           <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FdSs0rJgDDpYqgtVMTLmzdB%2FVillagr-eCommerce-Service-Hackathon%3Fnode-id%3D34%253A3131%26viewport%3D509%252C278%252C0.13355758786201477%26scaling%3Dscale-down" allowfullscreen></iframe>
@@ -26,8 +27,9 @@ const AboutPage = ({ business_name }) => {
       <h4 style="font-family: karla;color:#7086FF;">View Our Concept Demo Here:</h4>
       <div><a href="https://www.villagr-us.com/#/">Back to Homepage</a></div>
       <br></br>
+    <div/>
 
-    </body>
+    {/* </body> */}
   )
 }
 
