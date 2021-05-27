@@ -7,6 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 // import Home from './Components/Home';
 import MapView from './Components/MapView';
 import ListView from './Components/ListView';
+import AboutPage from './Components/AboutPage'
 // import { Nav, NavItem } from 'react-bootstrap';
 
 function App() {
@@ -57,8 +58,7 @@ function App() {
           <Route exact path="/" component={MapView} />
           <Route path="/list" component={ListView} />
           {/* <Route path="/about" component={AboutView} /> */}
-          <Route path="/about" render={() => 
-          {window.location.href="./about_page.html"}} />
+          <Route path="/about" component={AboutPage} />
         </Switch>
       </div>
     // </body>
