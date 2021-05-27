@@ -7,9 +7,9 @@ const AboutPage = ({ business_name }) => {
       <br/>
       <h1 style={{fontFamily: "karla", width: "50%", color: "#7086FF", textAlign: "center", margin: "0 auto"}}>Villagr's Mission</h1><br/>
       <p>How much will a customer help local businesses recover from this pandemic?</p><br/>
-      <div>
-        <video src="../../public/demo_video.mp4" controls style={{width: "800px"}}></video>
-      </div>
+      
+      <video src="../../public/demo_video.mp4" controls style={{width: "800px"}}></video>
+      
       <br/>
       <div style={{width: "80%", textAlign: "left", margin: "0 auto"}}>
         <p>Villagr is a web application that allows users to search and browse local service providers, prioritizing businesses based on each company's critical need, rather than rating or popularity.</p>
